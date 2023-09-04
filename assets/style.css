@@ -1,0 +1,114 @@
+        /* css navbar */
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 10vh;
+            background-color: #001d3d;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5%;
+        }
+
+        .logo h4 {
+            margin-top: 10px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .logo h4 span {
+            color: #ffc300;
+        }
+
+        /* CSS Searchbar */
+        .search-bar {
+            width: 30%;
+            height: 35px;
+            background-color: #0d1b2a;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 40px;
+            border-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .search-bar:hover {
+            border-color: #ffc300;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 15px;
+            font-weight: 500;
+            color: #ffffff;
+            width: 80%;
+        }
+
+        .search-bar button {
+            border: none;
+            border-radius: 40px;
+            border-color: white;
+            outline: none;
+            background: none;
+            width: 17%;
+            height: 35px;
+            font-size: 17px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .search-bar:hover button {
+            background-color: #ffc300;
+            color: #ffffff;
+        }
+
+        /* CSS Menu */
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        .nav-links a.active {
+            color: #ffc300;
+        }
+
+        .nav-links a:hover {
+            background-color: #ffc300;
+            color: white;
+            border-radius: 5px;
+        }
