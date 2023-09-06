@@ -15,6 +15,7 @@
 
         a {
             text-decoration: none;
+            color: #000000;
         }
 
         nav {
@@ -127,6 +128,30 @@
             transition: all 0.5s ease;
         }
 
+        @media screen and (max-width: 1036px) {
+            nav {
+                align-items: center;
+            }
+
+            .logo {
+                margin-left: 2rem;
+            }
+
+            .logo h4 {
+                font-size: 0.9rem;
+                margin-top: 3.5px;
+            }
+
+            .search-bar {
+                width: 50%;
+                margin-left: 0.8rem;
+            }
+
+            .search-bar button {
+                margin-right: 5px;
+            }
+        }
+
         /* css container-header */
         .container-header {
             display: flex;
@@ -213,7 +238,7 @@
 
         .container .judul h3 {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: bolder;
             color: #000000;
             display: flex;
             align-items: center;
@@ -251,10 +276,12 @@
                 height: 50%;
                 padding: 2rem;
                 text-align: center;
+                background: rgba(0, 0, 0, 0);
             }
 
             .content-left h1 {
                 font-size: 2rem;
+                margin-top: 20vh;
             }
 
             .content-left p {
@@ -266,6 +293,7 @@
                 height: 50%;
                 padding: 2rem;
                 text-align: center;
+                background: rgba(0, 0, 0, 0);
             }
 
             .content-right h1 {
@@ -281,8 +309,9 @@
             }
 
             .container .judul h3 {
-                font-size: 15px;
+                font-size: 20px;
                 margin-left: 2rem;
+                font-weight: bolder;
             }
 
             .container .judul h3 img {
@@ -370,7 +399,7 @@
 
         .card .content .desc {
             margin: 20px 0;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             color: #000000;
             line-height: 20px;
@@ -400,11 +429,187 @@
             background-color: #ffc300;
         }
 
-        /* Aside */
-        #about {
-            background-color: #f5f5f5;
+        /* Actor Section */
+        #actor {
+            background-color: #e2e2e2;
         }
 
+        .container-actor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 2000px;
+        }
+
+        .card-actor {
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 1rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-actor {
+            width: 150px;
+            height: 225px;
+            border-radius: 10px 0 0 10px;
+            overflow: hidden;
+        }
+
+        .img-actor img {
+            width: 150px;
+            height: 225px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .content-actor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            width: 49rem;
+            padding: 1rem;
+        }
+
+        .title-actor {
+            text-align: left;
+        }
+
+        .title-actor h3 {
+            font-size: 1.5rem;
+        }
+
+        .title-actor span {
+            font-size: 1rem;
+        }
+
+        .desc-actor {
+            margin-top: 0.5rem;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .desc-actor span {
+            font-size: 14px;
+        }
+
+        .button-actor {
+            display: flex;
+            justify-content: right;
+            margin-top: 0.5rem;
+        }
+
+        .button-actor button {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #001d3d;
+            color: #ffffff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+        .button-actor button:hover {
+            background-color: #ffc300;
+        }
+
+        /* media query */
+        @media screen and (max-width: 1036px) {
+            .container-card {
+                width: 100%;
+            }
+
+            .card {
+                width: 100%;
+                height: 100%;
+            }
+
+            .card .img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .card .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .card .content .title h3 {
+                font-size: 1rem;
+            }
+
+            .card .content .title span {
+                font-size: 1rem;
+            }
+
+            .card .content .desc {
+                font-size: 1rem;
+            }
+
+            .card .content .button button {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .container-actor {
+                width: 100%;
+            }
+
+            .card-actor {
+                width: 100%;
+                height: 100%;
+                margin: 1rem 0;
+            }
+
+            .img-actor {
+                width: 100%;
+                height: 23rem;
+                border-radius: 10px 0 0 10px;
+            }
+
+            .img-actor img {
+                width: 100%;
+                height: 23rem;
+                object-fit: cover;
+                object-position: center center;
+            }
+
+            .content-actor {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .title-actor h3 {
+                font-size: 1rem;
+            }
+
+            .title-actor span {
+                font-size: 0.8rem;
+            }
+
+            .desc-actor {
+                font-size: 0.8rem;
+            }
+
+            .desc-actor span {
+                font-size: 0.8rem;
+            }
+
+            .button-actor button {
+                padding: 0.5rem 1rem;
+                margin: 0 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Aside */
         .garis-bawah-judul {
             margin-left: 9rem;
             width: 31%;
@@ -484,9 +689,12 @@
             margin-top: 1rem;
         }
 
+        .about-us .container-about .content-aboutus-right .sosmed a {
+            margin-right: 5px;
+        }
+
         .about-us .container-about .content-aboutus-right .sosmed i {
-            font-size: 13px;
-            margin: 5px 10px;
+            font-size: 20px;
             color: black;
         }
 
@@ -513,14 +721,24 @@
 
             .about-us .container-about .content-aboutus-left {
                 width: 100%;
-                padding-left: 0;
+                margin-left: 20px;
                 margin-bottom: 20px;
                 text-align: center;
+                padding: 1rem;
+                border-radius: 10px;
+                background-color: white;
             }
 
             .about-us .container-about .content-aboutus-right {
                 width: 100%;
+                padding: 1rem;
                 margin-bottom: 20px;
+                border-radius: 10px;
+                background-color: white;
+            }
+
+            .about-us .container-about .content-aboutus-right .sosmed a {
+                margin-right: 3px;
             }
         }
 
